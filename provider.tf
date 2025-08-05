@@ -7,9 +7,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-expense"
-    key    = "vpc-module-demo" # keys are always unque within the bucket
-    region = "us-east-1"
+    bucket         = "terraform-expense"
+    key            = "vpc-module-demo" # keys are always unque within the bucket
+    region         = "us-east-1"
     dynamodb_table = "terraform-locking"
   }
 
